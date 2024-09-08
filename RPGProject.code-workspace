@@ -1,0 +1,2263 @@
+{
+	"folders": [
+		{
+			"name": "RPGProject",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "C:\\Git\\UnrealEngine-5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "RPGProject Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Win64",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Mac",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"IOS",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"Linux",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"LinuxArm64",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject TVOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject TVOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject TVOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject TVOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Test",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProject TVOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProject TVOS Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProject",
+					"TVOS",
+					"Shipping",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Win64",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Win64",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProjectEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Win64",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProjectEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Win64",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Win64",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProjectEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Win64",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Linux",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Linux",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProjectEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Linux",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Linux",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Linux",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProjectEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Linux",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Linux",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Linux",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProjectEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Linux",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Mac Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Mac",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Mac",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProjectEditor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Mac",
+					"Debug",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Mac",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Mac",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProjectEditor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Mac",
+					"DebugGame",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Mac Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Mac",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Mac",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"RPGProjectEditor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			},
+			{
+				"label": "RPGProjectEditor Mac Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"RPGProjectEditor",
+					"Mac",
+					"Development",
+					"C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Git\\UnrealEngine-5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch RPGProject (Debug)",
+				"request": "launch",
+				"program": "C:\\Works\\RPGProject\\Binaries\\Win64\\RPGProject-Win64-Debug.exe",
+				"preLaunchTask": "RPGProject Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\Git\\UnrealEngine-5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Git\\UnrealEngine-5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch RPGProject (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Works\\RPGProject\\Binaries\\Win64\\RPGProject-Win64-DebugGame.exe",
+				"preLaunchTask": "RPGProject Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\Git\\UnrealEngine-5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Git\\UnrealEngine-5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch RPGProject (Development)",
+				"request": "launch",
+				"program": "C:\\Works\\RPGProject\\Binaries\\Win64\\RPGProject.exe",
+				"preLaunchTask": "RPGProject Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\Git\\UnrealEngine-5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Git\\UnrealEngine-5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch RPGProject (Test)",
+				"request": "launch",
+				"program": "C:\\Works\\RPGProject\\Binaries\\Win64\\RPGProject-Win64-Test.exe",
+				"preLaunchTask": "RPGProject Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\Git\\UnrealEngine-5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Git\\UnrealEngine-5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch RPGProject (Shipping)",
+				"request": "launch",
+				"program": "C:\\Works\\RPGProject\\Binaries\\Win64\\RPGProject-Win64-Shipping.exe",
+				"preLaunchTask": "RPGProject Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\Git\\UnrealEngine-5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Git\\UnrealEngine-5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch RPGProjectEditor (Debug)",
+				"request": "launch",
+				"program": "C:\\Git\\UnrealEngine-5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "RPGProjectEditor Win64 Debug Build",
+				"args": [
+					"C:\\Works\\RPGProject\\RPGProject.uproject"
+				],
+				"cwd": "C:\\Git\\UnrealEngine-5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Git\\UnrealEngine-5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch RPGProjectEditor (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Git\\UnrealEngine-5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "RPGProjectEditor Win64 DebugGame Build",
+				"args": [
+					"C:\\Works\\RPGProject\\RPGProject.uproject"
+				],
+				"cwd": "C:\\Git\\UnrealEngine-5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Git\\UnrealEngine-5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch RPGProjectEditor (Development)",
+				"request": "launch",
+				"program": "C:\\Git\\UnrealEngine-5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "RPGProjectEditor Win64 Development Build",
+				"args": [
+					"C:\\Works\\RPGProject\\RPGProject.uproject"
+				],
+				"cwd": "C:\\Git\\UnrealEngine-5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Git\\UnrealEngine-5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "C:\\Git\\UnrealEngine-5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=C:\\Works\\RPGProject\\RPGProject.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "C:\\Git\\UnrealEngine-5.3"
+			}
+		]
+	}
+}
